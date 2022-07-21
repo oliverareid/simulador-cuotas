@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Cuotas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+        <h1>Simulador de Cuotas</h1>
+    </div>
+    <div id="explicacion"></div>
+    <div class="mb-3 formulario">
+        <label for="exampleFormControlInput1" class="form-label">Monto de la compra</label>
+        <input type="number" class="form-control" id="input-monto" placeholder="ingrese el monto de su compra">
+        <br>
+        <label for="exampleFormControlInput1" class="form-label">Cantidad de cuotas</label>
+        <input type="number" class="form-control" id="input-cuotas" placeholder="ingrese la cantidad de cuotas a pagar">
+        <br>
+        <label for="exampleFormControlInput1" class="form-label">Alícuota de IVA</label>
+        <input type="number" class="form-control" id="input-alicuota" placeholder="ingrese la alícuota de IVA correspondiente (21, 10.5 o 0)">
+    </div>
+    <div class="boton">
+        <button id="btnCalcular" type="button" class="btn btn-primary">Calcular</button>
+    </div>
+    <div>
+      <p id="resultadoTotal"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
